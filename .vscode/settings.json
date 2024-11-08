@@ -1,0 +1,8 @@
+{
+  "cSpell.words": [
+    "geist"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+}
