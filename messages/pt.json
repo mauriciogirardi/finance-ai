@@ -1,3 +1,6 @@
 {
-  "home": "Olá"
+  "home": "Olá",
+  "login.welcome": "Bem-vindo",
+  "login.description": "A Finance AI é uma plataforma de gestão financeira que utiliza IA para monitorar suas movimentações, e oferecer insights personalizados, facilitando o controle do seu orçamento.",
+  "login.button": "Entrar com Google"
 }

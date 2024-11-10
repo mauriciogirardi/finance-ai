@@ -38,7 +38,9 @@ export default async function RootLayout({
         disableTransitionOnChange
         forcedTheme="dark"
       >
-        <body className={`${inter.className} antialiased`}>{children}</body>
+        <body className={`${inter.className} antialiased min-h-dvh`}>
+          {children}
+        </body>
       </ThemeProvider>
     </html>
   )
