@@ -2,5 +2,5 @@
   "home": "Hello",
   "login.welcome": "Welcome",
   "login.description": "Finance AI is a financial management platform that uses AI to monitor your movements, and offer personalized insights, making it easy to control your budget.",
-  "login.button": "Sign in with Google"
+  "login.button": "Login or create account"
 }
