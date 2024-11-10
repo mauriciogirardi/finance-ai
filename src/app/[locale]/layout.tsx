@@ -6,6 +6,7 @@ import './globals.css'
 import i18nConfig from '../../../i18nConfig'
 import { notFound } from 'next/navigation'
 import type { Locale } from '@/@types'
+import { ThemeProvider } from '@/providers/theme-provider'
 
 export const metadata: Metadata = {
   title: 'Finance.ia',
@@ -29,8 +30,16 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang={locale} suppressHydrationWarning>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+        forcedTheme="dark"
+      >
+        <body className={`${inter.className} antialiased`}>{children}</body>
+      </ThemeProvider>
     </html>
   )
 }
